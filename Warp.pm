@@ -5,7 +5,7 @@ require Exporter;
 require DynaLoader;
 @ISA =         qw(DynaLoader Exporter);
 @EXPORT_OK   = qw(reset to scale time);
-$VERSION     = '0.02';
+$VERSION     = '0.03';
 
 __PACKAGE__->bootstrap($VERSION);
 
@@ -22,8 +22,8 @@ Time::Warp - control over the flow of time
 
     use Time::Warp qw(scale to time);
 
-    to(CORE::time + 5);  # 5 seconds ahead
-    scale(2);            # double speed of time
+    to(time + 5);  # 5 seconds ahead
+    scale(2);      # make time flow twice normal
 
 =head1 DESCRIPTION
 
@@ -44,7 +44,7 @@ making it appear as if time is moving forwards or backward
 instanteously.  Commonly, time starts at Wed Dec 31 19:00:00 1969
 (this will likely change as we approach 2030).
 
-  to(CORE::time + 5)  # 5 sounds ahead
+  to(time + 60*60);       # 1 hour ahead
 
 =item * scale($factor)
 
