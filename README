@@ -1,4 +1,4 @@
-Time::Warp - gives some programmer control over the flow of time
+Time::Warp - offers developers control over the measurement of time
 
 
 SYNOPSIS
@@ -9,4 +9,4 @@ SYNOPSIS
     scale(2);            # double speed of time
 
 
-AVAILABLE FROM CPAN
+AVAILABLE FROM CPAN!
