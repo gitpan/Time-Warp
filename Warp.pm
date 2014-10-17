@@ -5,7 +5,7 @@ require Exporter;
 require DynaLoader;
 @ISA =         qw(DynaLoader Exporter);
 @EXPORT_OK   = qw(reset to scale time);
-$VERSION     = '0.5';
+$VERSION     = '0.51';
 
 __PACKAGE__->bootstrap($VERSION);
 
@@ -13,6 +13,8 @@ install_time_api();
 
 1;
 __END__
+
+=encoding utf8
 
 =head1 NAME
 
@@ -76,7 +78,7 @@ THERMODYNAMICS.
 
 =head1 COPYRIGHT
 
-Copyright © 1999, 2000 Joshua Nathaniel Pritikin.  All rights reserved.
+Copyright Â© 1999, 2000 Joshua Nathaniel Pritikin.  All rights reserved.
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
